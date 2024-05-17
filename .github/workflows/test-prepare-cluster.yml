@@ -81,7 +81,7 @@ jobs:
       - name: remove cluster
         id: remove-cluster
         if: always()
-        uses: replicatedhq/compatibility-actions/remove-cluster@main
+        uses: replicatedhq/replicated-actions/remove-cluster@main
         continue-on-error: true # It could be that the cluster is already removed
         with:
           api-token: ${{ secrets.REPLICATED_API_TOKEN }}
