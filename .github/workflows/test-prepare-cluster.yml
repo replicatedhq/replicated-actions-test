@@ -52,7 +52,7 @@ jobs:
 
       - name: test prepare-cluster
         id: prepare-cluster
-        uses: replicatedhq/reliability-actions/prepare-cluster@main
+        uses: replicatedhq/replicated-actions/prepare-cluster@main
         with:
           api-token: ${{ secrets.REPLICATED_API_TOKEN }}
           app-slug: replicated-actions-ci # from the Replicated QA team
