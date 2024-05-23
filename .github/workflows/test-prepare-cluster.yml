@@ -2,6 +2,8 @@ name: test - prepare-cluster
 
 on:
   workflow_dispatch:
+  repository_dispatch:
+    types: [e2e-tests]
   schedule:
     - cron: "0 16 * * *"
 
